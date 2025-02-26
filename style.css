@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: black;
+}
+
+main {
+    align-items: center;
+    display: block;
+    flex-direction: column;
+    margin-left: 650px;
+    gap: 30px;
+
+
+
+
+
+
+
+}
+
+div {
+    align-items: center;
+    display: block;
+    flex-direction: row;
+    margin-left: 170px;
+    padding-top: 80px;
+}
+
+section {
+    align-items: center;
+    margin: 0px 150px 0px 0px;
+}
+
+.name-main {
+    margin: 15px 0px;
+    margin-left: 220px;
+}
+
+.input-main {
+    margin-right: 20px;
+}
+
+.input-right {
+    margin-right: 70px;
+}
+
+
+
+img,
+h1 {
+    width: 583;
+    height: 374;
+
+}
+
+p {
+    width: 299;
+    height: 20;
+    top: 656px;
+    left: 870px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37.5px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-left: 200px;
+
+
+
+}
+
+input {
+    width: 342px;
+    height: 74px;
+    top: 705px;
+    left: 647px;
+    border-radius: 14px;
+    border-width: 1px;
+    background: #FFFFFF40;
+    border: 1px solid white;
+    font-size: 40px;
+    line-height: 46.88px;
+    letter-spacing: 0px;
+    color: white;
+    padding-left: 15px;
+}
+
+button {
+    width: 342px;
+    height: 72px;
+    top: 858px;
+    left: 849px;
+    border-radius: 10px;
+    background: #AEC346;
+    box-shadow: 0px 18px 40px 0px #AEC34659;
+    color: #FFFFFF;
+    top: 26px;
+    left: 76px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 2.5px;
+    letter-spacing: 0px;
+    text-align: center;
+    cursor: pointer;
+
+
+
+}
+
+/* 📱 Tablets (até 1024px) */
+@media screen and (max-width: 1024px) {
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    div {
+        margin-left: 0;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    img {
+        width: 450px;
+        height: auto;
+    }
+
+    .name-main {
+        align-items: center;
+    }
+
+    p {
+        font-size: 22px;
+        text-align: center;
+
+    }
+
+    input {
+        width: 80%;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    button {
+        width: 80%;
+        height: 55px;
+        font-size: 24px;
+    }
+}
+
+/* 📱 Celulares (até 768px) */
+@media screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    section {
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    img {
+        width: 350px;
+        height: auto;
+    }
+
+    .name-main {
+        align-items: center;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    input {
+        width: 90%;
+        max-width: 280px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 90%;
+        max-width: 280px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+/* 📱 Celulares pequenos (até 480px) */
+@media screen and (max-width: 430px) {
+    body {
+        width: 100%;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+        padding-top: 0px 0px 50px 0px;
+        
+    }
+
+
+
+    main {
+        width: 100%;
+    }
+
+    div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    img {
+        width: 250px;
+        height: auto;
+        padding-top: 70px;
+
+    }
+
+    .name-main {
+        margin-right: 200px;
+        padding-bottom: 50px;
+        font-size: 20px;
+
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    input {
+        width: 90%;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .input-main {
+        margin: 0px 0px 20px 0px;
+    }
+
+    button {
+        width: 90%;
+        height: 45px;
+        font-size: 18px;
+        border: 25px solid #AEC346;
+        padding-right: 15px;
+
+    }
+
+
+
+  
+
+}
