@@ -7,7 +7,7 @@
     font-family: sans-serif;
 }
 
-/* Estilos básicos para dispositivos móveis */
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -40,13 +40,13 @@ h1 {
 .name-main {
     font-size: 1.2rem;
     margin: 10px 0;
-    color: white; /* Ensure text is visible */
+    color: white;
 }
 
 section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center inputs */
+    align-items: center; 
     gap: 10px;
     margin: 20px 0;
 }
@@ -76,7 +76,7 @@ button:hover {
     background-color:#AEC346 ;
 }
 
-/* Estilos para telas maiores */
+
 @media (min-width: 768px) {
     main {
         max-width: 600px;
@@ -103,7 +103,7 @@ button:hover {
       font-family: sans-serif;
   }
 
-  /* Estilos básicos para dispositivos móveis */
+  
   body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
@@ -138,13 +138,13 @@ button:hover {
   .name-main {
       font-size: 1.2rem;
       margin: 10px 0;
-      color: white; /* Ensure text is visible */
+      color: white; 
   }
 
   section {
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center inputs */
+      align-items: center; 
       gap: 10px;
       margin: 20px 0;
   }
@@ -174,7 +174,7 @@ button:hover {
       background-color: #AEC346;
   }
 
-  /* Estilos para tablets */
+  
   @media (min-width: 768px) {
       main {
           max-width: 600px;
@@ -191,7 +191,7 @@ button:hover {
       }
   }
 
-  /* Estilos para desktops */
+  
   @media (min-width: 1024px) {
       main {
           max-width: 800px;
