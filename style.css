@@ -7,282 +7,212 @@
     font-family: sans-serif;
 }
 
+/* Estilos básicos para dispositivos móveis */
 body {
-    background: black;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
 }
 
 main {
-    align-items: center;
-    display: block;
-    flex-direction: column;
-    margin-left: 650px;
-    gap: 30px;
-
-
-
-
-
-
-
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    border-radius: 8px;
 }
 
-div {
-    align-items: center;
-    display: block;
-    flex-direction: row;
-    margin-left: 170px;
-    padding-top: 80px;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-section {
-    align-items: center;
-    margin: 0px 150px 0px 0px;
+h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
 .name-main {
-    margin: 15px 0px;
-    margin-left: 220px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: white; /* Ensure text is visible */
 }
 
-.input-main {
-    margin-right: 20px;
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center inputs */
+    gap: 10px;
+    margin: 20px 0;
 }
 
+.input-main,
 .input-right {
-    margin-right: 70px;
-}
-
-
-
-img,
-h1 {
-    width: 583;
-    height: 374;
-
-}
-
-p {
-    width: 299;
-    height: 20;
-    top: 656px;
-    left: 870px;
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 37.5px;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    margin-left: 200px;
-
-
-
-}
-
-input {
-    width: 342px;
-    height: 74px;
-    top: 705px;
-    left: 647px;
-    border-radius: 14px;
-    border-width: 1px;
-    background: #FFFFFF40;
-    border: 1px solid white;
-    font-size: 40px;
-    line-height: 46.88px;
-    letter-spacing: 0px;
-    color: white;
-    padding-left: 15px;
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 150px;
+    box-sizing: border-box;
 }
 
 button {
-    width: 342px;
-    height: 72px;
-    top: 858px;
-    left: 849px;
-    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
     background: #AEC346;
-    box-shadow: 0px 18px 40px 0px #AEC34659;
-    color: #FFFFFF;
-    top: 26px;
-    left: 76px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 2.5px;
-    letter-spacing: 0px;
-    text-align: center;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-
-
-
 }
 
-/* 📱 Tablets (até 1024px) */
-@media screen and (max-width: 1024px) {
-    main {
-        width: 90%;
-        margin: auto;
-    }
-
-    div {
-        margin-left: 0;
-        padding-top: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    h1 {
-        font-size: 36px;
-    }
-
-    img {
-        width: 450px;
-        height: auto;
-    }
-
-    .name-main {
-        align-items: center;
-    }
-
-    p {
-        font-size: 22px;
-        text-align: center;
-
-    }
-
-    input {
-        width: 80%;
-        height: 60px;
-        font-size: 20px;
-    }
-
-    button {
-        width: 80%;
-        height: 55px;
-        font-size: 24px;
-    }
+button:hover {
+    background-color:#AEC346 ;
 }
 
-/* 📱 Celulares (até 768px) */
-@media screen and (max-width: 768px) {
+/* Estilos para telas maiores */
+@media (min-width: 768px) {
     main {
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    div {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: 20px;
+        max-width: 600px;
     }
 
     section {
-        margin: 0;
+        flex-direction: row;
+        justify-content: center;
     }
 
-    h1 {
-        font-size: 30px;
-    }
-
-    img {
-        width: 350px;
-        height: auto;
-    }
-
-    .name-main {
-        align-items: center;
-    }
-
-    p {
-        font-size: 18px;
-    }
-
-    input {
-        width: 90%;
-        max-width: 280px;
-        height: 50px;
-        font-size: 16px;
-    }
-
-    button {
-        width: 90%;
-        max-width: 280px;
-        height: 50px;
-        font-size: 20px;
+    .input-main,
+    .input-right {
+        max-width: 120px;
     }
 }
 
-/* 📱 Celulares pequenos (até 480px) */
-@media screen and (max-width: 430px) {
-    body {
-        width: 100%;
-        height: 100px;
-        padding: 0;
-        margin: 0;
-        padding-top: 0px 0px 50px 0px;
-        
-    }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+  }
 
-    main {
-        width: 100%;
-    }
+  /* Estilos básicos para dispositivos móveis */
+  body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: black;
+  }
 
-    div {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: 10px;
-    }
+  main {
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: black;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 400px;
+  }
 
-    h1 {
-        font-size: 24px;
-    }
+  img {
+      max-width: 100%;
+      height: auto;
+  }
 
-    img {
-        width: 250px;
-        height: auto;
-        padding-top: 70px;
+  h1 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+  }
 
-    }
+  .name-main {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      color: white; /* Ensure text is visible */
+  }
 
-    .name-main {
-        margin-right: 200px;
-        padding-bottom: 50px;
-        font-size: 20px;
+  section {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center inputs */
+      gap: 10px;
+      margin: 20px 0;
+  }
 
-    }
+  .input-main,
+  .input-right {
+      padding: 8px;
+      font-size: 0.9rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 150px;
+      box-sizing: border-box;
+  }
 
-    p {
-        font-size: 16px;
-    }
+  button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #fff;
+      background: #AEC346;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
 
-    input {
-        width: 90%;
-        height: 45px;
-        font-size: 14px;
-    }
+  button:hover {
+      background-color: #AEC346;
+  }
 
-    .input-main {
-        margin: 0px 0px 20px 0px;
-    }
+  /* Estilos para tablets */
+  @media (min-width: 768px) {
+      main {
+          max-width: 600px;
+      }
 
-    button {
-        width: 90%;
-        height: 45px;
-        font-size: 18px;
-        border: 25px solid #AEC346;
-        padding-right: 15px;
+      section {
+          flex-direction: row;
+          justify-content: center;
+      }
 
-    }
+      .input-main,
+      .input-right {
+          max-width: 120px;
+      }
+  }
 
+  /* Estilos para desktops */
+  @media (min-width: 1024px) {
+      main {
+          max-width: 800px;
+          padding: 40px;
+      }
 
+      h1 {
+          font-size: 2rem;
+      }
 
-  
+      .name-main {
+          font-size: 1.5rem;
+      }
 
-}
+      .input-main,
+      .input-right {
+          max-width: 200px;
+      }
+
+      button {
+          padding: 15px 30px;
+          font-size: 1.2rem;
+      }
+  }
